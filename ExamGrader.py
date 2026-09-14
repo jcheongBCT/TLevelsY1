@@ -37,3 +37,5 @@ print("Average score: " + str(AverageScore))
 print("Highest score: " + str(HighestScore))
 print("Lowest score: " + str(LowestScore))
 print("Average Grad: " + str(PassOrFail))
+
+#Don't worry I won't be grading your final work :>
