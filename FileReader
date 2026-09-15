@@ -1,0 +1,21 @@
+from pypdf import PdfReader
+import re
+
+
+reader = PdfReader("Secret code.pdf")
+page1 = reader.pages[0]
+page2 = reader.pages[1]
+page3 = reader.pages[2]
+page4 = reader.pages[3]
+page5 = reader.pages[4]
+
+
+
+
+print(page1.extract_text())
+print(page2.extract_text())
+print(page3.extract_text())
+Passwordresults1 = re.search(“^[[ *]]$”, page1)
+print(Passwordresults1)
+Passwordresults2 = re.search(“^[[ *]]$”, page2)
+print(Passwordresults2)
